@@ -23,9 +23,71 @@
             </nav>
             <div class="header-text">
                 <p>Software Engineer</p>
-                <h1>Hi, I'm <span>Guillermo</span> Pacheco</h1>
+                <h1>Hi, I'm <span>Guillermo Pacheco</span><br> From Spain</h1>
             </div>
         </div>
     </div>
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Labore temporibus non voluptatem atque architecto similique,
+                    possimus, vero reiciendis magnam aspernatur, aliquid maxime
+                    necessitatibus porro corrupti modi. Atque enim magnam dolor?</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Spring Framework</li>
+                            <li><span>Agile Methodologies</span><br>SCRUM</li>
+                            <li><span>Web Development</span><br>HTML, CSS, Javascript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>En mi casa</li>
+                            <li><span>2019 - 2021</span><br>En mi casa</li>
+                            <li><span>2012 - 2019</span><br>En mi casa</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2024</span><br>Computer Scince at Universidad de Sevilla</li>
+                            <li><span>2016 - 2018</span><br>IES Los Alcores</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
 </body>
 </html>
