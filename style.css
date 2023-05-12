@@ -123,3 +123,41 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+/*work*/
+#works{
+    padding: 30px 0;
+}
+.works-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.works-list div{
+    background: #046cb647;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.works-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.works-list div a{
+    text-decoration: none;
+    color: #faf3dd;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.works-list div:hover{
+    background: #fe812ddf;
+    transform: translateY(-10px);
+}
+.works-list div p{
+    font-size: 15px;
+    font-weight: 500;
+}
