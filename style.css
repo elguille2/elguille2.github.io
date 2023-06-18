@@ -124,40 +124,77 @@ nav ul li a:hover::after{
     display: block;
 }
 /*work*/
-#works{
-    padding: 30px 0;
+#portfolio{
+    padding: 50px 0;
 }
-.works-list{
+.work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.works-list div{
-    background: #046cb647;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
+.work{
     border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
+    position:relative;
+    overflow: hidden;
 }
-.works-list div h2{
-    font-size: 30px;
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #fe7f2d);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
-.works-list div a{
-    text-decoration: none;
-    color: #faf3dd;
-    font-size: 12px;
+.layer a{
     margin-top: 20px;
-    display: inline-block;
+    text-decoration: none;
+    color: #fe7f2d;
+    font-size: 18px;
+    line-height: 45px;
+    background: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
 }
-.works-list div:hover{
-    background: #fe812ddf;
-    transform: translateY(-10px);
+.work:hover img{
+    transform: scale(1.1);
 }
-.works-list div p{
-    font-size: 15px;
-    font-weight: 500;
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #fe7f2d;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background-color: #fe7f2d;
 }
