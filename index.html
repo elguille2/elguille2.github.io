@@ -15,12 +15,14 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" style="color: #faf3dd;" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" style="color: #faf3dd;" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Software Engineer</p>
@@ -142,6 +144,9 @@
             </div>
         </div>
     </div>
+    <div class="copyright">
+        <p>Copyright © Guillermo Pacheco 2023</p>
+    </div>
     <script>
 
         var tablinks = document.getElementsByClassName("tab-links")
@@ -179,6 +184,17 @@
         })
     </script>
 
+    <script>
+        var sideMenu = document.getElementById("side-menu");
+
+        function openMenu(){
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu(){
+            sideMenu.style.right = "-200px";
+        }
+    </script>
 
 </body>
 </html>
