@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guillermo Pacheco - Personal Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     
 </head>
 <body>
@@ -13,19 +15,179 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" style="color: #faf3dd;" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" style="color: #faf3dd;" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Software Engineer</p>
-                <h1>Hi, I'm <span>Guillermo</span> Pacheco</h1>
+                <h1>Hi, I'm <span>Guillermo Pacheco</span><br> From Spain</h1>
             </div>
         </div>
     </div>
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Guillermo. A future software engineer constantly learning and refining my skills.
+                        I love tackling challenges and finding creative solutions to complex problems.
+                        Always on the lookout for new opportunities to develop my abilities and knowledge in the fascinating
+                        field of computer science.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java, Python, SQL, JavaScript, HTML, CSS</li>
+                            <li><span>Libraries & Frameworks</span><br>Spring Boot</li>
+                            <li><span>Tools & Platforms</span><br>MariaDB, HeidiSQL, Git + GitHub, Heroku</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>En mi casa</li>
+                            <li><span>2019 - 2021</span><br>En mi casa</li>
+                            <li><span>2012 - 2019</span><br>En mi casa</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2024</span><br>Computer Science at Universidad de Sevilla</li>
+                            <li><span>2016 - 2018</span><br>IES Los Alcores</li>
+                            <li><span>Languages</span><br>Spanish - Native<br>English - B1 <br>Portuguese - Fluent</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="/images/my-cv.pdf" class="btn btn2">Download CV</a>
+        </div>
+        
+        
+    </div>
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/parchis.png">
+                    <div class="layer">
+                        <h3>Parcheesi&Goose with Spring Boot</h3>
+                        <p>This project consists of two traditional games, such as Parcheesi and Goose Game.
+                            Both games are implemented in a web application, where the player can log in, choose a game,
+                            and create matches.
+                        </p>
+                        <a href="https://github.com/gii-is-DP1/dp1-2022-2023-l3-1"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/petclinic.png">
+                    <div class="layer">
+                        <h3>PetClinic with Spring Boot</h3>
+                        <p>Petclinic is a Spring Boot application built using Maven.
+                        </p>
+                        <a href="https://github.com/gii-is-psg2/psg2-2122-g1-13"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/acme.png">
+                    <div class="layer">
+                        <h3>Acme-L3</h3>
+                        <p>Acme-L3! A project developed by students of the Design and Testing 2 course at the University of Seville. 
+                        </p>
+                        <a href="https://github.com/Acme-L3/Acme-L3-D04"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>guillermo2pacheco@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+34 653 28 58 59</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/guillermo-pacheco-/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/elguille2"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/guillermo2pacheco@gmail.com" method="POST">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+          el: "#header",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0xfe7f2d,
+          backgroundColor: 0x002642,
+          points: 3.00,
+          maxDistance: 32.00,
+          spacing: 20.00
+        })
+    </script>
+
+    <script>
+        var sideMenu = document.getElementById("side-menu");
+
+        function openMenu(){
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu(){
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+
 </body>
 </html>
