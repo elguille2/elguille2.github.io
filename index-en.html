@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guillermo Pacheco - Sitio Web Personal</title>
+    <title>Guillermo Pacheco - Personal Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">  
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/images/favicon/site.webmanifest">
+    
 </head>
 <body>
     <div id="header">
@@ -18,22 +19,23 @@
             <nav>
                 <img src="images/logo.png" class="logo">
                 <ul id="side-menu">
-                    <li><a href="#header">Inicio</a></li>
-                    <li><a href="#about">Acerca de</a></li>
-                    <li><a href="#portfolio">Trabajo</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                    <li><a href="index-en.html" id="language-toggle" class="no-animation"><img src="images/estados-unidos.png" alt="Change Language"></a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html" id="language-toggle" class="no-animation"><img src="images/espana.png" alt="Change Language"></a></li>
                     <i class="fas fa-times" style="color: #faf3dd;" onclick="closeMenu()"></i>
                 </ul>
                 <i class="fas fa-bars" style="color: #faf3dd;" onclick="openMenu()"></i>
+                
             </nav>
             <div class="header-text">
-                <p>Ingeniero de Software</p>
-                <h1>Hola, soy <span>Guillermo Pacheco</span><br> Desde España</h1>
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Guillermo Pacheco</span><br> From Spain</h1>
             </div>
         </div>
     </div>
-    <!--acerca de-->
+    <!--about-->
     <div id="about">
         <div class="container">
             <div class="row">
@@ -41,49 +43,53 @@
                     <img src="images/user.png">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">Acerca de Mí</h1>
-                    <p>Hola, soy Guillermo, un aspirante a ingeniero de software que se encuentra en constante aprendizaje y mejora de sus habilidades.
-                    Disfruto enfrentar desafíos y descubrir soluciones creativas a problemas complejos. Siempre estoy en búsqueda de nuevas oportunidades
-                    para desarrollar mis destrezas y conocimientos en el apasionante campo de la informática.</p>
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Guillermo. A future software engineer constantly learning and refining my skills.
+                        I love tackling challenges and finding creative solutions to complex problems.
+                        Always on the lookout for new opportunities to develop my abilities and knowledge in the fascinating
+                        field of computer science.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
-                        <!-- <p class="tab-links" onclick="opentab('experience')">Experiencia</p> -->
-                        <p class="tab-links" onclick="opentab('education')">Educación</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Lenguajes de Programación</span><br>Java, Python, SQL, JavaScript, HTML, CSS</li>
-                            <li><span>Librerías y Frameworks</span><br>Spring Boot</li>
-                            <li><span>Herramientas y Plataformas</span><br>MariaDB, HeidiSQL, Git + GitHub, Heroku</li>
+                            <li><span>Programming Languages</span><br>Java, Python, SQL, JavaScript, HTML, CSS</li>
+                            <li><span>Libraries & Frameworks</span><br>Spring Boot</li>
+                            <li><span>Tools & Platforms</span><br>MariaDB, HeidiSQL, Git + GitHub, Heroku</li>
                         </ul>
                     </div>
                     <!-- <div class="tab-contents" id="experience">
                         <ul>
                         </ul>
                     </div> -->
-                    <div class "tab-contents" id="education">
+                    <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2018 - 2024</span><br>Ingeniería Informática en la Universidad de Sevilla</li>
-                            <li><span>Idiomas</span><br>Español - Nativo<br>Inglés - B1<br>Portugués - Fluido</li>
+                            <li><span>2018 - 2024</span><br>Computer Science at Universidad de Sevilla</li>
+                            <li><span>Languages</span><br>Spanish - Native<br>English - B1 <br>Portuguese - Fluent</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <a href="/files/mi-cv.pdf" class="btn btn2" target="_blank">Descargar CV</a>
+            <a href="/files/my-cv.pdf" class="btn btn2" target="_blank">Download CV</a>
         </div>
+        
+        
     </div>
-    <!--portafolio-->
+    <!--portfolio-->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">Mi Trabajo</h1>
+            <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="images/parchis.png">
                     <div class="layer">
-                        <h3>Parchís y Oca con Spring Boot</h3>
-                        <p>Este proyecto consta de dos juegos tradicionales, Parchís y Oca.
-                            Ambos juegos están implementados en una aplicación web, donde el jugador puede iniciar sesión, elegir un juego y crear partidas.
+                        <h3>Parcheesi&Goose with Spring Boot</h3>
+                        <p>This project consists of two traditional games, such as Parcheesi and Goose Game.
+                            Both games are implemented in a web application, where the player can log in, choose a game,
+                            and create matches.
                         </p>
                         <a href="https://github.com/gii-is-DP1/dp1-2022-2023-l3-1" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
@@ -91,13 +97,13 @@
                 <div class="work">
                     <img src="images/twitter.jpg">
                     <div class="layer">
-                        <h3>Análisis de Sentimiento de Tweets con Aprendizaje Automático</h3>
+                        <h3>Sentiment analysis of tweets with machine learning.</h3>
                         <p>
-                            En este proyecto, se examinó el sentimiento de tweets de dos usuarios destacados de Twitter utilizando Textblob. El objetivo es evaluar su influencia en las discusiones en línea.
+                            In this project, we examined the sentiment of tweets from two notable Twitter users using Textblob. The objective is to assess their influence on online discussions.
                         </p>
                         <div class="icon-container">
                             <a href="https://github.com/Antonio23337/Analisis-Sentimientos" class="align-icons" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="files/La-cara-oculta-de-las-opiniones.pdf" class="align-icons" target="_blank"><i class="fas fa-file-pdf"></i></a>
+                            <a href="files/La cara oculta de las opiniones.pdf" class="align-icons" target="_blank"><i class="fas fa-file-pdf"></i></a>
                         </div>
                     </div>
                 </div>
@@ -105,7 +111,7 @@
                     <img src="images/acme.png">
                     <div class="layer">
                         <h3>Acme-L3</h3>
-                        <p>¡Acme-L3! Un proyecto desarrollado por estudiantes del curso Diseño y Pruebas 2 en la Universidad de Sevilla.
+                        <p>Acme-L3! A project developed by students of the Design and Testing 2 course at the University of Seville. 
                         </p>
                         <a href="https://github.com/Acme-L3/Acme-L3-D04" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
@@ -113,35 +119,37 @@
                 <div class="work">
                     <img src="images/petclinic.png">
                     <div class="layer">
-                        <h3>PetClinic con Spring Boot</h3>
-                        <p>PetClinic es una aplicación Spring Boot construida con Maven.
+                        <h3>PetClinic with Spring Boot</h3>
+                        <p>Petclinic is a Spring Boot application built using Maven.
                         </p>
                     </div>
                 </div>
             </div>
-            <a id="see-more" class="btn active">Ver más</a>
-            <a id="see-less" class="btn">Ver menos</a>
+            <a id="see-more" class="btn active">See more</a>
+            <a id="see-less" class="btn">See less</a>
+            
         </div>
     </div>
-    <!--contacto-->
+    <!--contact-->
     <div id="contact">
-        <div class = "container">
+        <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contáctame</h1>
+                    <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fas fa-paper-plane"></i>guillermo2pacheco@gmail.com</p>
                     <p><i class="fas fa-phone"></i>+34 653 28 58 59</p>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/guillermo-pacheco-" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/guillermo-pacheco-/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/elguille2" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
+                    
                 </div>
                 <div class="contact-right">
                     <form action="https://formsubmit.co/guillermo2pacheco@gmail.com" method="POST">
-                        <input type="text" name="Nombre" placeholder="Nombre" required>
-                        <input type="email" name="email" placeholder="Correo electrónico" required>
-                        <textarea name="Mensaje" rows="6" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="btn btn3">Enviar</button>
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
                     </form>
                 </div>
             </div>
@@ -167,6 +175,6 @@
           spacing: 20.00
         })
     </script>
-    <script src="script.js"></script>
+    <script src="script.js"></script>   
 </body>
 </html>

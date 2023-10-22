@@ -69,3 +69,23 @@ sideMenuLinks.forEach(function (link) {
         closeMenu();
     });
 });
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     const languageToggle = document.getElementById("language-toggle");
+//     let currentLanguage = "en"; // Pista del idioma actual
+
+//     // Agrega un manejador de eventos al enlace de cambio de idioma
+//     languageToggle.addEventListener("click", function(event) {
+//         event.preventDefault(); // Evita que el enlace recargue la página
+
+//         if (currentLanguage === "en") {
+//             // Cambia al idioma español
+//             window.location.href = "index-es.html";
+//             currentLanguage = "es";
+//         } else {
+//             // Cambia al idioma inglés
+//             window.location.href = "index.html";
+//             currentLanguage = "en";
+//         }
+//     });
+// });

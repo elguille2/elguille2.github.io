@@ -52,6 +52,33 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+nav ul li a.no-animation::after {
+    width: 0%;
+}
+
+/* Agrega esta regla de estilo para aplicar la animación en los elementos <a> sin la clase "no-animation" */
+nav ul li a.no-animation:hover::after {
+    width: 0%;
+}
+#language-toggle {
+    display: inline-block;
+    margin-right: 20px; /* Espaciado entre el botón de idioma y otros elementos del menú */
+    color: #faf3dd;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    line-height: 1; /* Ajusta la alineación vertical del botón con otros elementos */
+}
+
+#language-toggle img {
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+    margin-right: 5px; /* Espacio entre la imagen y el texto */
+    vertical-align: middle;
+    margin-right: 5px;
+    max-width: 24px; /* Tamaño máximo deseado para la imagen */
+    height: auto; /* Mantiene la proporción de aspecto */
+    margin-top: -2px;
+}
 .header-text{
     margin-top: 13%;
     font-size: 30px;
