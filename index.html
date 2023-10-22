@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guillermo Pacheco - Personal Website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     
 </head>
 <body>
@@ -20,9 +20,9 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Work</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" style="color: #faf3dd;" onclick="closeMenu()"></i>
+                    <i class="fas fa-xmark" style="color: #faf3dd;" onclick="closeMenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" style="color: #faf3dd;" onclick="openMenu()"></i>
+                <i class="fas fa-bars" style="color: #faf3dd;" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Software Engineer</p>
@@ -46,7 +46,7 @@
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
@@ -56,23 +56,19 @@
                             <li><span>Tools & Platforms</span><br>MariaDB, HeidiSQL, Git + GitHub, Heroku</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="experience">
+                    <!-- <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2021 - Current</span><br>En mi casa</li>
-                            <li><span>2019 - 2021</span><br>En mi casa</li>
-                            <li><span>2012 - 2019</span><br>En mi casa</li>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2018 - 2024</span><br>Computer Science at Universidad de Sevilla</li>
-                            <li><span>2016 - 2018</span><br>IES Los Alcores</li>
                             <li><span>Languages</span><br>Spanish - Native<br>English - B1 <br>Portuguese - Fluent</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <a href="/images/my-cv.pdf" class="btn btn2">Download CV</a>
+            <a href="/files/my-cv.pdf" class="btn btn2" target="_blank">Download CV</a>
         </div>
         
         
@@ -90,7 +86,29 @@
                             Both games are implemented in a web application, where the player can log in, choose a game,
                             and create matches.
                         </p>
-                        <a href="https://github.com/gii-is-DP1/dp1-2022-2023-l3-1"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/gii-is-DP1/dp1-2022-2023-l3-1" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/twitter.jpg">
+                    <div class="layer">
+                        <h3>Sentiment analysis of tweets with machine learning.</h3>
+                        <p>
+                            In this project, we examined the sentiment of tweets from two notable Twitter users using Textblob. The objective is to assess their influence on online discussions.
+                        </p>
+                        <div class="icon-container">
+                            <a href="https://github.com/Antonio23337/Analisis-Sentimientos" class="align-icons" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="files/La cara oculta de las opiniones.pdf" class="align-icons" target="_blank"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/acme.png">
+                    <div class="layer">
+                        <h3>Acme-L3</h3>
+                        <p>Acme-L3! A project developed by students of the Design and Testing 2 course at the University of Seville. 
+                        </p>
+                        <a href="https://github.com/Acme-L3/Acme-L3-D04" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -101,17 +119,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/acme.png">
-                    <div class="layer">
-                        <h3>Acme-L3</h3>
-                        <p>Acme-L3! A project developed by students of the Design and Testing 2 course at the University of Seville. 
-                        </p>
-                        <a href="https://github.com/Acme-L3/Acme-L3-D04"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <a id="see-more" class="btn active">See more</a>
+            <a id="see-less" class="btn">See less</a>
+            
         </div>
     </div>
     <!--contact-->
@@ -120,11 +131,11 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>guillermo2pacheco@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+34 653 28 58 59</p>
+                    <p><i class="fas fa-paper-plane"></i>guillermo2pacheco@gmail.com</p>
+                    <p><i class="fas fa-phone"></i>+34 653 28 58 59</p>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/guillermo-pacheco-/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/elguille2"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/guillermo-pacheco-/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/elguille2" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                     
                 </div>
@@ -139,23 +150,7 @@
             </div>
         </div>
     </div>
-    <script>
 
-        var tablinks = document.getElementsByClassName("tab-links")
-        var tabcontents = document.getElementsByClassName("tab-contents")
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link")
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab")
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script>
@@ -175,18 +170,6 @@
           spacing: 20.00
         })
     </script>
-
-    <script>
-        var sideMenu = document.getElementById("side-menu");
-
-        function openMenu(){
-            sideMenu.style.right = "0";
-        }
-
-        function closeMenu(){
-            sideMenu.style.right = "-200px";
-        }
-    </script>
-
+    <script src="script.js"></script>   
 </body>
 </html>
