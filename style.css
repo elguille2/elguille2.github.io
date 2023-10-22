@@ -316,6 +316,20 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
+    .work-list {
+        grid-template-columns: 1fr; /* Establece una sola columna para los trabajos */
+        grid-gap: 20px; /* Ajusta el espaciado entre los trabajos*/
+    }
+    .work {
+        display: block; /* Muestra los trabajos uno encima del otro */
+    }
+    .work .layer p {
+        display: none;
+    }
+    .align-icons {
+        display: inline-block;
+        margin-right: 10px; /* Puedes ajustar el valor de margen según tus preferencias */
+    }
     .sub-title{
         font-size: 40px;
     }
