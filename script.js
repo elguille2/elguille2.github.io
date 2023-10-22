@@ -1,4 +1,3 @@
-// Define las funciones en el archivo script.js
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -43,4 +42,30 @@ seeLessButton.addEventListener('click', function () {
     }
     seeMoreButton.style.display = 'block';
     seeLessButton.style.display = 'none';
+});
+
+function toggleLayer(workElement) {
+    const layer = workElement.querySelector(".layer");
+    if (layer.style.height === "" || layer.style.height === "0px") {
+        layer.style.height = "100%";
+    } else {
+        layer.style.height = "0";
+    }
+}
+
+var workElements = document.querySelectorAll('.work');
+
+workElements.forEach(function (workElement) {
+    workElement.addEventListener('click', function () {
+        toggleLayer(workElement);
+    });
+});
+
+// Agrega este código para cerrar el menú lateral cuando se hace clic en un enlace
+var sideMenuLinks = document.querySelectorAll('#side-menu a');
+
+sideMenuLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+        closeMenu();
+    });
 });
