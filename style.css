@@ -132,7 +132,7 @@ nav ul li a:hover::after{
 }
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -140,6 +140,11 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position:relative;
     overflow: hidden;
+    
+}
+.align-icons {
+    display: inline-block;
+    margin-right: 10px; /* Puedes ajustar el valor de margen según tus preferencias */
 }
 .work img{
     width: 100%;
@@ -181,6 +186,9 @@ nav ul li a:hover::after{
     border-radius: 50%;
     text-align: center;
 }
+.work:not(:nth-child(-n+3)) {
+    display: none;
+}
 .work:hover img{
     transform: scale(1.1);
 }
@@ -200,6 +208,12 @@ nav ul li a:hover::after{
 }
 .btn:hover{
     background-color: #fe7f2d;
+}
+#see-more, #see-less {
+    display: none;
+}
+#see-more.active, #see-less.active {
+    display: block;
 }
 /*contact*/
 #contact{
@@ -265,7 +279,7 @@ form .btn3{
 
 /*responsive*/
 
-nav .fa-solid{
+nav .fas{
     display: none;
 }
 
@@ -277,7 +291,7 @@ nav .fa-solid{
     .header-text h1{
         font-size: 30px;
     }
-    nav .fa-solid{
+    nav .fas{
         display: block;
         font-size: 25px;
     }
@@ -296,7 +310,7 @@ nav .fa-solid{
         display: block;
         margin: 25px;
     }
-    nav ul .fa-solid{
+    nav ul .fas{
         position: absolute;
         top: 25px;
         left: 25px;
