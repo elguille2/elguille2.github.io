@@ -56,27 +56,27 @@ nav ul li a.no-animation::after {
     width: 0%;
 }
 
-/* Agrega esta regla de estilo para aplicar la animación en los elementos <a> sin la clase "no-animation" */
+
 nav ul li a.no-animation:hover::after {
     width: 0%;
 }
 #language-toggle {
     display: inline-block;
-    margin-right: 20px; /* Espaciado entre el botón de idioma y otros elementos del menú */
+    margin-right: 20px; 
     color: #faf3dd;
     text-decoration: none;
     font-size: 18px;
     position: relative;
-    line-height: 1; /* Ajusta la alineación vertical del botón con otros elementos */
+    line-height: 1; 
 }
 
 #language-toggle img {
-    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
-    margin-right: 5px; /* Espacio entre la imagen y el texto */
     vertical-align: middle;
     margin-right: 5px;
-    max-width: 24px; /* Tamaño máximo deseado para la imagen */
-    height: auto; /* Mantiene la proporción de aspecto */
+    vertical-align: middle;
+    margin-right: 5px;
+    max-width: 24px; 
+    height: auto; 
     margin-top: -2px;
 }
 .header-text{
@@ -171,7 +171,7 @@ nav ul li a.no-animation:hover::after {
 }
 .align-icons {
     display: inline-block;
-    margin-right: 10px; /* Puedes ajustar el valor de margen según tus preferencias */
+    margin-right: 10px; 
 }
 .work img{
     width: 100%;
@@ -243,69 +243,72 @@ nav ul li a.no-animation:hover::after {
     display: block;
 }
 /*contact*/
-#contact{
-    padding: 60px 0;
-}
-.contact-left{
-    flex-basis: 35%;
-}
-.contact-right{
-    flex-basis: 60%;
-}
-.contact-left p{
-    margin-top: 30px;
-}
-.contact-left p i{
-    color: #fe7f2d;
-    margin-right: 15px;
-    font-size: 20px;
-}
 .social-icons{
-    margin-top: 30px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    border-radius: 6px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column; /* Establece la dirección de flexión a column para alinear verticalmente los íconos */
+    align-items: center; /* Centra los íconos horizontalmente */
+}
+.social-icons::after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #fe7f2d;  
 }
 .social-icons a{
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 30px;
-    color: #ababab;
-    display: inline-block;
+    color: #fff;
+    margin: 10px 0; /* Ajusta el margen vertical entre los íconos */
+    font-family: 'Poppins', sans-serif;
     transition: transform 0.3s;
-}.social-icons a:hover{
+}
+.social-icons a:hover, .social-icons a:focus {
     color: #fe7f2d;
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
-.btn.btn2{
-    display: block;
-    background: #fe7f2d;
-}
-.btn.btn3{
-    display: inline-block;
-    background: #fe7f2d;
-}
-.contact-right form{
-    width: 100%;
-}
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background:  #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color:#fff;
-    font-size: 18px;
+.correo-vertical-fijo {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior según tus preferencias */
+    right: 20px; /* Ajusta la distancia desde la parte derecha según tus preferencias */
+    z-index: 999; /* Ajusta el valor del índice z para que esté por encima de otros elementos */    
     border-radius: 6px;
-}
-form .btn3{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
     cursor: pointer;
+    transition: transform 0.3s;
 }
-
-
+.correo-vertical-fijo::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #fe7f2d;
+  }
+.correo-vertical-fijo a {
+    text-decoration: none;
+    color: #fff;
+    margin: 20px auto;
+    padding: 5px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+    transition: transform 0.3s;
+  }
+  .correo-vertical-fijo a:hover, .correo-vertical-fijo a:focus {
+    transform: translateY(-3px);
+}
 /*responsive*/
-
 nav .fas{
     display: none;
 }
@@ -374,7 +377,49 @@ nav .fas{
         margin-right: 20px;
         margin-bottom: -15px;
     }
-    .contact-left, .contact-right{
-        flex-basis: 100%;
-    }
+    .social-icons {
+        flex-direction: row; /* Cambiar la dirección de flexión a horizontal */
+        justify-content: center; /* Centrar los íconos horizontalmente */
+        align-items: flex-start; /* Alinear los íconos en la parte superior verticalmente */
+      }
+    
+      .correo-vertical-fijo {
+        position: fixed;
+        bottom: 20px; /* Ajusta la distancia desde la parte inferior según tus preferencias */
+        right: 20px; /* Ajusta la distancia desde la parte derecha según tus preferencias */
+        z-index: 999; /* Ajusta el valor del índice z para que esté por encima de otros elementos */    
+        border-radius: 6px;
+        text-align: center;
+        font-size: 24px;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+      
+      .correo-vertical-fijo::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0 auto;
+        background-color: #fe7f2d;
+      }
+      
+      .correo-vertical-fijo a {
+        text-decoration: none;
+        color: #fff;
+        display: block; /* Cambiar el enlace a un elemento de bloque */
+        margin: 20px auto;
+        padding: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 1;
+        letter-spacing: 0.1em;
+        writing-mode: horizontal-tb; /* Restablecer el modo de escritura horizontal */
+        transition: transform 0.3s;
+      }
+      
+      .correo-vertical-fijo a:hover, .correo-vertical-fijo a:focus {
+        transform: translateY(-3px);
+      }
+    
 }
