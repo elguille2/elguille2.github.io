@@ -378,48 +378,34 @@ nav .fas{
         margin-bottom: -15px;
     }
     .social-icons {
-        flex-direction: row; /* Cambiar la dirección de flexión a horizontal */
-        justify-content: center; /* Centrar los íconos horizontalmente */
-        align-items: flex-start; /* Alinear los íconos en la parte superior verticalmente */
+        display: flex;
+        flex-direction: column; /* Alinear verticalmente los íconos */
+        align-items: center; /* Centrar los íconos horizontalmente */
       }
     
       .correo-vertical-fijo {
         position: fixed;
         bottom: 20px; /* Ajusta la distancia desde la parte inferior según tus preferencias */
         right: 20px; /* Ajusta la distancia desde la parte derecha según tus preferencias */
-        z-index: 999; /* Ajusta el valor del índice z para que esté por encima de otros elementos */    
+        z-index: 999; /* Ajusta el valor del índice z para que esté por encima de otros elementos */
         border-radius: 6px;
         text-align: center;
         font-size: 24px;
         cursor: pointer;
         transition: transform 0.3s;
       }
-      
-      .correo-vertical-fijo::after {
-        content: '';
-        display: block;
-        width: 1px;
-        height: 90px;
-        margin: 0 auto;
-        background-color: #fe7f2d;
-      }
-      
+    
       .correo-vertical-fijo a {
         text-decoration: none;
         color: #fff;
         display: block; /* Cambiar el enlace a un elemento de bloque */
-        margin: 20px auto;
+        margin: 10px auto; /* Ajusta el margen vertical entre el correo y los íconos */
         padding: 10px;
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
         line-height: 1;
         letter-spacing: 0.1em;
         writing-mode: horizontal-tb; /* Restablecer el modo de escritura horizontal */
-        transition: transform 0.3s;
-      }
-      
-      .correo-vertical-fijo a:hover, .correo-vertical-fijo a:focus {
-        transform: translateY(-3px);
       }
     
 }
