@@ -7,11 +7,10 @@
     <title>Guillermo Pacheco - Personal Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">  
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/images/favicon/site.webmanifest">
-    
 </head>
 <body>
     <div id="header">
@@ -20,13 +19,12 @@
                 <img src="images/logo.png" class="logo">
                 <ul id="side-menu">
                     <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">About Me</a></li>
                     <li><a href="#portfolio">Work</a></li>
                     <li><a href="index.html" id="language-toggle" class="no-animation"><img src="images/espana.png" alt="Change Language"></a></li>
                     <i class="fas fa-times" style="color: #faf3dd;" onclick="closeMenu()"></i>
                 </ul>
                 <i class="fas fa-bars" style="color: #faf3dd;" onclick="openMenu()"></i>
-                
             </nav>
             <div class="header-text">
                 <p>Software Engineer</p>
@@ -43,10 +41,9 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hi, I'm Guillermo. A future software engineer constantly learning and refining my skills.
-                        I love tackling challenges and finding creative solutions to complex problems.
-                        Always on the lookout for new opportunities to develop my abilities and knowledge in the fascinating
-                        field of computer science.</p>
+                    <p>Hello, I’m Guillermo, a final year Software Engineering student.
+                        I enjoy tackling challenges and finding creative solutions to complex problems.
+                        I’m always looking for new opportunities to improve my skills and continue learning.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -56,26 +53,26 @@
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Programming Languages</span><br>Java, Python, SQL, JavaScript, HTML, CSS</li>
-                            <li><span>Libraries & Frameworks</span><br>Spring Boot, Django</li>
-                            <li><span>Tools & Platforms</span><br>MariaDB, HeidiSQL, Git + GitHub, Heroku</li>
+                            <li><span>Libraries & Frameworks</span><br>Spring Boot, Django, Bootstrap</li>
+                            <li><span>Tools & Platforms</span><br>MariaDB, HeidiSQL, Git, GitHub, Docker, PostgreSQL, SQLite</li>
+                            <li><span>Methodologies & Soft Skills</span><br>Agile Methodologies, Teamwork, Problem Solving, Time Management, Effective Communication, Critical Thinking</li>
                         </ul>
                     </div>
+                    
                     <!-- <div class="tab-contents" id="experience">
                         <ul>
                         </ul>
                     </div> -->
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2018 - 2024</span><br>Computer Science at Universidad de Sevilla</li>
-                            <li><span>Languages</span><br>Spanish - Native<br>English - B1 <br>Portuguese - Fluent</li>
+                            <li><span>Universidad de Sevilla</span><br>Software Engineering</li>
+                            <li><span>Languages</span><br>Spanish - Native<br>English - Fluent<br>Portuguese - Fluent</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <a href="/files/my-cv.pdf" class="btn btn2" target="_blank">Download CV</a>
+            <a href="/files/CV-en.pdf" class="btn btn2" target="_blank">Download CV</a>
         </div>
-        
-        
     </div>
     <!--portfolio-->
     <div id="portfolio">
@@ -83,26 +80,58 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
+                    <img src="images/banquetbuddy.png">
+                    <div class="layer">
+                        <h3>Banquet Buddy</h3>
+                        <p>Catering management application connecting individuals, employers, and caterers.</p>
+                        <a href="https://github.com/ISPP-GRUPO-8/BANQUETBUDDY" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/phonedoctor.png">
+                    <div class="layer">
+                        <h3>PhoneDoctor</h3>
+                        <p>eCommerce platform for purchasing mobile phone repairs.</p>
+                        <a href="https://github.com/PGPI-2-1/PhoneDoctor" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
                     <img src="images/parchis.png">
                     <div class="layer">
-                        <h3>Parcheesi&Goose with Spring Boot</h3>
-                        <p>This project consists of two traditional games, such as Parcheesi and Goose Game.
-                            Both games are implemented in a web application, where the player can log in, choose a game,
-                            and create matches.
+                        <h3>Parcheesi & Goose with Spring Boot</h3>
+                        <p>This project consists of two traditional games, Parcheesi and Goose.
+                            Both games are implemented in a web application, where the player can log in, choose a game, and create matches.
                         </p>
                         <a href="https://github.com/gii-is-DP1/dp1-2022-2023-l3-1" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="work">
+                    <img src="images/http-server.png">
+                    <div class="layer">
+                        <h3>HTTP Server with Java-Python</h3>
+                        <p>These projects involve implementing an HTTP server in both Java and Python.</p>
+                        <a href="https://github.com/elguille2/http-server-java" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/elguille2/http-server-python" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/data-structure.png">
+                    <div class="layer">
+                        <h3>Learn Data Structures and Algorithms</h3>
+                        <p>This repository provides both theoretical explanations and practical implementations of various data structures and algorithms.</p>
+                        <a href="https://github.com/elguille2/Learn-Data-Structures-and-Algorithms" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
                     <img src="images/twitter.jpg">
                     <div class="layer">
-                        <h3>Sentiment analysis of tweets with machine learning.</h3>
+                        <h3>Sentiment Analysis of Tweets with Machine Learning</h3>
                         <p>
-                            In this project, we examined the sentiment of tweets from two notable Twitter users using Textblob. The objective is to assess their influence on online discussions.
+                            In this project, the sentiment of tweets from two prominent Twitter users was examined using Textblob. The goal is to assess their influence on online discussions.
                         </p>
                         <div class="icon-container">
                             <a href="https://github.com/Antonio23337/Analisis-Sentimientos" class="align-icons" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="files/La cara oculta de las opiniones.pdf" class="align-icons" target="_blank"><i class="fas fa-file-pdf"></i></a>
+                            <a href="files/La-cara-oculta-de-las-opiniones.pdf" class="align-icons" target="_blank"><i class="fas fa-file-pdf"></i></a>
                         </div>
                     </div>
                 </div>
@@ -110,7 +139,7 @@
                     <img src="images/acme.png">
                     <div class="layer">
                         <h3>Acme-L3</h3>
-                        <p>Acme-L3! A project developed by students of the Design and Testing 2 course at the University of Seville. 
+                        <p>Acme-L3! A project developed by students of the Design and Testing 2 course at the University of Seville.
                         </p>
                         <a href="https://github.com/Acme-L3/Acme-L3-D04" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
@@ -119,22 +148,21 @@
                     <img src="images/petclinic.png">
                     <div class="layer">
                         <h3>PetClinic with Spring Boot</h3>
-                        <p>Petclinic is a Spring Boot application built using Maven.
+                        <p>PetClinic is a Spring Boot application built using Maven.
                         </p>
                     </div>
                 </div>
             </div>
             <a id="see-more" class="btn active">See more</a>
             <a id="see-less" class="btn">See less</a>
-            
         </div>
     </div>
     <!--contact-->
     <div class="correo-vertical-fijo">
         <a href="mailto:guillermo2pacheco@gmail.com">guillermo2pacheco@gmail.com</a>
-    </div> 
+    </div>
     <div class="social-icons">
-        <a href="https://www.linkedin.com/in/guillermo-pacheco-/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/guillermo-pacheco-" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/elguille2" target="_blank"><i class="fab fa-github"></i></a>
     </div>
 
@@ -157,6 +185,6 @@
           spacing: 20.00
         })
     </script>
-    <script src="script.js"></script>   
+    <script src="script.js"></script>
 </body>
 </html>
